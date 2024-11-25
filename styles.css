@@ -50,6 +50,7 @@ nav {
   justify-content: space-between;
   max-width: 1440px;
   margin: 0px auto;
+  height: 80px;
 }
 nav a img {
   width: 100px;
@@ -72,6 +73,8 @@ nav ul li a {
   text-transform: uppercase;
 }
 
+
+
 nav ul li a:hover {
   color: var(--red);
 }
@@ -89,8 +92,24 @@ nav ul li a:hover {
   color: var(--white);
 }
 
+.menu-hamburguesa, .label-hamburguesa {
+  display: none;
+}
+
+.subtitle {
+  display: inline-block;
+  font: var(--headline2);
+  color: var(--white);
+  line-height: 0.9;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+
 .container {
   width: 100%;
+  display: flex;
+  flex-direction: column;
   max-width: 1440px;
   padding: 0 20px;
   margin: 0 auto;
@@ -221,9 +240,11 @@ nav ul li a:hover {
 .palabras {
   display: flex;
   gap: 12px;
+
 }
 .palabras > p {
   color: var(--brown);
+  display: inline;
   background-color: var(--white);
   padding: 4px 8px;
   border-radius: 4px;
@@ -239,14 +260,7 @@ nav ul li a:hover {
   padding: 60px 0px;
 }
 
-.section h2 {
-  display: inline-block;
-  font: var(--headline2);
-  width: 100%;
-  text-align: center;
-  color: var(--white);
-  text-transform: uppercase;
-}
+
 
 .portafolio-blocks{
   margin-top: 40px;
@@ -278,7 +292,7 @@ nav ul li a:hover {
 
 /*estrategia*/
 
-#subtitle-black {
+.subtitle-black {
   color: var(--black-1);
 }
 
@@ -331,6 +345,7 @@ nav ul li a:hover {
   width: 100%;
 }
 
+
 .experiencia-texto p > span {
   background-color: var(--black-1);
   color: var(--white);
@@ -340,13 +355,6 @@ nav ul li a:hover {
   text-transform: uppercase;
 }
 
-.subtitle {
-  display: inline-block;
-  font: var(--headline2);
-  color: var(--white);
-  line-height: 0.9;
-  text-transform: uppercase;
-}
 
 
 #experiencia {
@@ -505,3 +513,68 @@ nav ul li a:hover {
   height: 200px;
 }
 
+
+
+@media (width <= 768px) {
+
+  nav {
+    position: relative;
+  }
+
+  .label-hamburguesa {
+    display: block;
+  }
+
+  .menu-hamburguesa:checked + .nav-central {
+    height: 200px;
+    z-index: 20;
+    padding-left: 10px;
+    transition: all 0.6s;
+  }
+
+  .nav-central {
+    position: absolute;
+    top: 90px;
+    flex-direction: column;
+    width: 100vw;
+    left: -20px;
+    gap: 1rem;
+    height: 0;
+    overflow: hidden;
+    background-color: rgba(168, 0, 56, 0.9);
+  }
+
+  .nav-central a {
+    color: var(--white);
+  }
+
+  .content-title h1 {
+    font-size: 5rem;
+  }
+
+  .content-title p {
+    font-size: 1.8rem;
+    max-width: 50vw;
+  }
+
+  #quienes-somos h2, .subtitle {
+    font-size: 3rem;
+  }
+
+  .container p {
+    font-size: 1.8rem;
+  }
+
+  .experiencia-info {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .colombia, .experiencia-datos {
+    width: 100%;
+  }
+
+  .palabras {
+    flex-direction: column;
+  }
+}
