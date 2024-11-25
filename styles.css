@@ -306,6 +306,7 @@ nav ul li a:hover {
 /* Experiencia */
 
 .experiencia-info {
+  margin-top: 20px;
   display: flex;
   width: 100%;
 }
@@ -316,7 +317,6 @@ nav ul li a:hover {
 
 .colombia img {
   width: 100%;
-  height: 600px;
   object-fit: contain;
 }
 
@@ -459,7 +459,6 @@ nav ul li a:hover {
 
 .boton-formulario {
   margin-top: 20px;
-  width: 20%;
   display: inline-block;
   padding: 12px 20px;
   border-radius: 8px;
@@ -557,17 +556,46 @@ nav ul li a:hover {
     max-width: 50vw;
   }
 
+  .objetivo {
+    height: auto;
+    padding: 20px;
+  }
+
+  .objetivo-texto {
+    margin: 20px auto;
+  }
+
   #quienes-somos h2, .subtitle {
-    font-size: 3rem;
+    font-size: 8vw;
   }
 
   .container p {
-    font-size: 1.8rem;
+    font-size: 3.4vw;
   }
 
   .experiencia-info {
     flex-direction: column;
     align-items: center;
+  }
+
+  .tiempo-equipo {
+    width: 90%;
+  }
+
+  .tiempo, .equipo {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+
+
+  .container .numero {
+    font-size: 10vw;
+  }
+
+  .colombia, .experiencia-datos{
+    width: 100%;
+    margin: 0 auto;
   }
 
   .colombia, .experiencia-datos {
@@ -576,5 +604,10 @@ nav ul li a:hover {
 
   .palabras {
     flex-direction: column;
+    width: 80%;
+  }
+
+  .boton-formulario {
+   width: 100%;
   }
 }
