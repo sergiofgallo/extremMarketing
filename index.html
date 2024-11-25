@@ -16,12 +16,13 @@
         <img src="./images/extremLogo.png" alt="">
       </a>
       <ul class="nav-central">
-        <li><a href="">¿Quiénes somos?</a></li>
-        <li><a href="">Experiencia</a></li>
-        <li><a href="">Clientes</a></li>
+        <li><a href="#quienes-somos">¿Quiénes somos?</a></li>
+        <li><a href="#portafolio">portafolio</a></li>
+        <li><a href="#experiencia">Experiencia</a></li>
+        <li><a href="#clientes">Clientes</a></li>
       </ul>
       <ul>
-        <li><a id="boton-contact" href="">Contacto</a></li>
+        <li><a id="boton-contact" href="#contacto">Contacto</a></li>
       </ul>
     </nav>
   </header>
@@ -43,7 +44,7 @@
       <div class="container objetivo">
         <div class="objetivo-texto">
           <h2>Nuestro objetivo</h2>
-          <p>Potenciamos tu marca con <span>estrategias</span> que <span>conectan</span> y generan <span>resultados</span>.</p>
+          <p>Potenciar tu marca con <span>estrategias</span> que <span>conectan</span> y generan <span>resultados</span>.</p>
           <div class="palabras">
             <p>EXPERIENCIA</p>
             <p>ESTRATEGIA</p>
@@ -54,7 +55,7 @@
       <div class="container">
       </div>
     </section>
-    <section id="portafolio">
+    <section id="portafolio" class="section">
       <div class="container">
         <h2>portafolio</h2>
         <div class="portafolio-blocks">
@@ -82,31 +83,26 @@
       </div>
 
     </section>
-    <section id="experiencia">
+    <section id="estrategia" class="section">
       <div class="container">
-        <h3>¿POR QUÉ ES EXITOSA
-        NUESTRA ESTRATEGIA?</h3>
+        <h2 id="subtitle-black">¿POR QUÉ ES EXITOSA
+        NUESTRA ESTRATEGIA?</h2>
         <div>
-          <img src="" alt="360">
+          <img src="./images/estrategia.png" alt="360">
         </div>
       </div>
+    </section>
+    <section id="experiencia" class="section">
       <div class="container">
-        <h2>SEGUIMIENTO</h2>
-        <div>
-          <img src="" alt="triangulo">
-        </div>
-      </div>
-    </div>
-      <div class="container">
+        <h2 class="subtitle">Experiencia</h2>
         <div class="experiencia-info">
           <div class="colombia">
             <img src="./images/colombiaExtrem.png" alt="mapa de colombia">
           </div>
           <div class="experiencia-datos">
             <div class="experiencia-texto">
-              <h2 class="subtitle">Experiencia</h2>
               <p>
-                Tenemos un equipo experto que ayuda a grandes marcas a crecer y destacarse en el mercado colombiano.
+                Tenemos un equipo <span>experto</span> que te ayudará a crecer y destacarte en el mercado colombiano.
               </p>
             </div>
             <div class="tiempo-equipo">
@@ -123,30 +119,71 @@
         </div>
       </div>
     </section>
-    <section id="clientes">
+    <section id="clientes" class="section">
       <div class="container">
-        <div class="prueba">
-          <div>
-            <h2 class="subtitle">Clientes</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis natus quaerat, ipsam nulla ratione illo perspiciatis non? Fugiat doloribus reprehenderit asperiores exercitationem voluptas animi nisi esse, rem similique quis sed?</p>
-          </div>
+        <div class="clientes-info">
+          <h2 class="subtitle">Clientes</h2>
+          <p>Empresas que han confiado en nuestros servicios</p>
+          <img src="./images/clientes.png" alt="">
         </div>
       </div>
     </section>
-    <section id="contacto">
-      <div class="container"></div>
+    <section id="contacto" class="section">
+      <div class="container">
+        <h2 class="subtitle" id="contacto-title">contacto</h2>
+        <div class="contenedor-formulario">
+          <form action="#" class="formulario">
+            <div>
+              <label for="name">
+                  Nombres y apellidos:<span>*</span>
+              </label>
+              <div>
+                  <input placeholder="Ricardo Restrepo" id="nombre" type="text" name="name" value required>
+              </div>
+            </div>
+            <div>
+              <label for="email">
+                Correo Electrónico:<span>*</span>
+              </label>
+              <div>
+                <input placeholder="micorreo@gmail.com" type="email" id="email" required name="email" value >
+              </div>
+            </div>
+              <div>
+                <label for="subject">
+                  Asunto:<span>*</span>
+                </label>
+                <div>
+                  <input type="text" placeholder="Cotización - Agenda de cita" id="asunto" name="subject" value data-last-active-input required>
+                </div>
+              </div>
+              <div>
+                <label for="message">
+                  Mensaje: <span>*</span>
+                </label>
+                <div>
+                  <textarea maxlength="280" name="message" id="mensaje" placeholder="Buenos días, me gustaría tener información adicional sobre ..." required></textarea>
+                </div>
+                <div>
+                  <button class="boton boton-formulario" type="submit">Enviar</button>
+                </div>
+              </div>
+            </form>
+        </div>
+      </div>
     </section>
   </main>
   <footer>
     <div class="footer-background">
       <div class="container">
         <div class="footer-name">
-          <h2 class="subtitle">E<span>x</span>trem Marketing</h2>
-          <p>Trabajamos con pasión</p>
+          <img src="./images/extremeLogo-white.png" alt="">
+          <!-- <h2 class="subtitle title-footer">E<span>x</span>trem Marketing</h2>
+          <p>Trabajamos con pasión</p> -->
         </div>
         <div class="footer-direction">
           <img src="" alt="icono-location">
-          <div>
+          <div class="segacreatives">
             <p>Elaborado por<a href="">segacreatives</a>2024</p>
           </div>
         </div>
