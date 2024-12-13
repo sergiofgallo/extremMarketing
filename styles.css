@@ -251,6 +251,8 @@ nav ul li a:hover {
   font-size: 2rem;
 }
 
+/*portafolio*/
+
 #portafolio {
   background-color: var(--black-1);
 }
@@ -259,8 +261,6 @@ nav ul li a:hover {
   width: 100%;
   padding: 60px 0px;
 }
-
-
 
 .portafolio-blocks{
   margin-top: 40px;
@@ -296,10 +296,64 @@ nav ul li a:hover {
   color: var(--black-1);
 }
 
-
-#estrategia img {
-  width: 100%;
+.estrategia-animacion {
+  display: flex;
   margin-top: 40px;
+  width: 100%;
+  gap: 45px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.informacion-estrategia {
+  width: 75%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+}
+
+.cajas-estrategia {
+  background-color: #c9b8b8;
+  width: 290px;
+  border-radius: 4px;
+  padding: 16px 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 8px;
+}
+
+.cajas-estrategia div {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  border-radius: 50%;
+  justify-content: center;
+  background-color: var(--red-dark);
+}
+.cajas-estrategia img {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+}
+
+.cajas-estrategia h3 {
+  font-size: 2.6rem;
+  color: #121212;
+  text-transform: uppercase;
+}
+
+.cajas-estrategia p {
+  font-size: 1.8rem;
+  color: #121212;
+}
+
+#estrategia video {
+  width: 30%;
+  border-radius: 50%;
 }
 
 
@@ -404,6 +458,24 @@ nav ul li a:hover {
   flex-direction: column;
   gap: 20px;
   font-size: 2.5rem;
+  text-align: center;
+}
+
+.cajas-clientes {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  padding: 16px 0;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.imagen-cliente {
+  width: 20%;
+  border-radius: 8px;
+  object-fit: contain;
+  background-color: var(--white);
 }
 
 /*formulario*/
@@ -480,39 +552,66 @@ nav ul li a:hover {
   background: linear-gradient(188deg, rgba(50, 50, 50, 1) 12%, rgba(32, 32, 32, 1) 100%);
 }
 
-.footer-name {
-  width: 100%;
-  padding: 40px 0px;
+.footer-information {
   display: flex;
-  flex-direction: column;
+  width: 80%;
+  margin: 0 auto;
+  padding: 40px 0;
   align-items: center;
+  justify-content: center;
+  gap: 60px;
+}
+
+.footer-box {
+  padding: 0px 20px;
+  display: flex;
+  height: 280px;
+  flex-direction: column;
+  align-items: flex-start;
   gap: 4px;
+  border-left: 4px solid var(--red-black);
 }
 
-
-
-
-
-.footer-name span {
-  color: var(--red);
-  text-shadow: 2px 1px 1px var(--red-white);
-}
-
-.footer-name p {
-  font: var(--body2-regular);
+.footer-box p, .rights p {
   color: var(--white);
-  font-size: 1.8rem;
-  display: inline-block;
-  max-width: 400px;
-  text-align: center;
+  font-size: 2.2rem;
+}
+
+.footer-box h4 {
+  color: var(--white);
+  margin-top: 16px;
+  font-size: 2.6rem;
+  text-decoration: none;
   text-transform: uppercase;
+  margin-bottom: 12px;
 }
 
-.footer-direction {
-  height: 200px;
+.footer-box a {
+  color: var(--white);
+  font-size: 2.2rem;
+  text-decoration: none;
+  text-transform: capitalize;
 }
 
+.footer-box a:hover {
+  color: var(--red-white);
+}
 
+.footer-box .location {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.footer-box .icono {
+  width: 35px;
+}
+
+.rights {
+  padding-bottom: 40px;
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
 
 @media (width <= 768px) {
 
@@ -547,6 +646,9 @@ nav ul li a:hover {
     color: var(--white);
   }
 
+  .section {
+    padding: 24px 0;
+  }
   .content-title h1 {
     font-size: 5rem;
   }
@@ -565,12 +667,24 @@ nav ul li a:hover {
     margin: 20px auto;
   }
 
-  #quienes-somos h2, .subtitle {
-    font-size: 8vw;
+  .objetivo-texto p {
+    line-height: 1.4;
   }
 
-  .container p {
-    font-size: 3.4vw;
+  #quienes-somos h2, .subtitle {
+    font-size: 8.5vw;
+  }
+
+  .palabras {
+    flex-direction: column;
+    width: 80%;
+  }
+  .container p, .container a {
+    font-size: 3vw;
+  }
+
+  .experiencia-datos {
+    gap: 12px;
   }
 
   .experiencia-info {
@@ -587,27 +701,74 @@ nav ul li a:hover {
     gap: 8px;
   }
 
+  .portafolio-blocks .box {
+    width: 250px;
+  }
 
+  .portafolio-blocks .box p {
+    padding: 12px;
+    font-size: 16px;
+  }
 
   .container .numero {
     font-size: 10vw;
   }
 
-  .colombia, .experiencia-datos{
+  .estrategia-animacion {
+    flex-direction: column;
+  }
+
+  #estrategia video {
+    width: 50%;
+  }
+
+  .informacion-estrategia {
     width: 100%;
-    margin: 0 auto;
+  }
+
+  .cajas-estrategia {
+    width: 43%;
+    padding-top: 12px;
+  }
+
+  .cajas-estrategia h3 {
+    font-size: 4vw;
   }
 
   .colombia, .experiencia-datos {
     width: 100%;
   }
 
-  .palabras {
-    flex-direction: column;
-    width: 80%;
+  .colombia {
+    width: 70%;
+  }
+
+  .experiencia-texto p {
+    line-height: 1.5;
   }
 
   .boton-formulario {
    width: 100%;
+  }
+
+  .footer-information {
+    width: 100%;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .footer-box {
+    width: 50%;
+    height: auto;
+    margin: 0 auto;
+    align-items: center;
+    border-left: 0;
+    border-bottom: 4px solid var(--red-black);
+    padding-bottom: 20px;
+  }
+
+  .footer-box h4 {
+    margin-top: 0;
+    font-size: 4vw;
   }
 }

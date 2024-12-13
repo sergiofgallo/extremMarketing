@@ -93,8 +93,53 @@
       <div class="container">
         <h2 class="subtitle subtitle-black">¿POR QUÉ ES EXITOSA
         NUESTRA ESTRATEGIA?</h2>
-        <div>
-          <img src="./images/estrategia.png" alt="360">
+        <div class="estrategia-animacion">
+          <video class="imagen-360" src="./images/animación.mp4" autoplay loop alt="360">
+          </video>
+          <div class="informacion-estrategia">
+            <div class="cajas-estrategia">
+              <div>
+                <img src="./images/iconos/icons8-cerebro-50.png" alt="">
+              </div>
+              <h3>brain storm</h3>
+              <p>Generamos ideas creativas y estrategias únicas que conectan con tu marca y público objetivo.</p>
+            </div>
+            <div class="cajas-estrategia">
+              <div>
+                <img src="./images/iconos/icons8-hoja-de-papel-50.png"" alt="">
+              </div>
+              <h3>propuesta</h3>
+              <p>Diseñamos un plan detallado que incluye conceptos innovadores y soluciones personalizadas.</p>
+            </div>
+            <div class="cajas-estrategia">
+              <div>
+                <img src="./images/iconos/icons8-para-hacer-50.png"" alt="">
+              </div>
+              <h3>ejecución</h3>
+              <p>Hacemos que las ideas cobren vida con una implementación impecable y profesional.</p>
+            </div>
+            <div class="cajas-estrategia">
+              <div>
+                <img src="./images/iconos/icons8-videollamada-32.png"" alt="">
+              </div>
+              <h3>foto de éxito</h3>
+              <p>Documentamos los momentos clave para destacar los logros y la esencia del evento.</p>
+            </div>
+            <div class="cajas-estrategia">
+              <div>
+                <img src="./images/iconos/icons8-métricas-del-portátil-50.png" alt="">
+              </div>
+              <h3>medición</h3>
+              <p>Analizamos resultados y evaluamos el impacto para garantizar que los objetivos se cumplan.</p>
+            </div>
+            <div class="cajas-estrategia">
+              <div>
+                <img src="./images/iconos/icons8-comentar-discusión-50.png"" alt="">
+              </div>
+              <h3>feedback</h3>
+              <p>Escuchamos tus comentarios y buscamos mejorar en cada proyecto.</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -130,7 +175,15 @@
         <div class="clientes-info">
           <h2 class="subtitle">Clientes</h2>
           <p>Empresas que han confiado en nuestros servicios</p>
-          <img src="./images/clientes.png" alt="">
+          <div class="cajas-clientes">
+            <img class="imagen-cliente" src="./images/clientes/centralCervecera.webp" alt="">
+            <img class="imagen-cliente" src="./images/clientes/postobon.png" alt="">
+            <img class="imagen-cliente" src="./images/clientes/tigo.jpg" alt="">
+            <img class="imagen-cliente" src="./images/clientes/mabe.webp" alt="">
+            <img class="imagen-cliente" src="./images/clientes/protabaco.png" alt="">
+            <img class="imagen-cliente" src="./images/clientes/fenavi.webp" alt="">
+          </div>
+          <!-- <img src="./images/clientes.png" alt=""> -->
         </div>
       </div>
     </section>
@@ -144,7 +197,7 @@
                   Nombres y apellidos:<span>*</span>
               </label>
               <div>
-                  <input placeholder="Ricardo Restrepo" id="nombre" type="text" name="name" value required>
+                  <input placeholder="Felipe Duarte" id="nombre" type="text" name="name" value required>
               </div>
             </div>
             <div>
@@ -182,17 +235,35 @@
   <footer>
     <div class="footer-background">
       <div class="container">
-        <div class="footer-name">
-          <img src="./images/extremeLogo-white.png" alt="">
-          <!-- <h2 class="subtitle title-footer">E<span>x</span>trem Marketing</h2>
-          <p>Trabajamos con pasión</p> -->
-        </div>
-        <div class="footer-direction">
-          <img src="" alt="icono-location">
-          <div class="segacreatives">
-            <p>Elaborado por<a href="">segacreatives</a>2024</p>
+        <section class="footer-information">
+          <div class="footer-box">
+            <img class="logo-blanco" src="./images/extremeLogo-white.png" alt="">
+            <p>Trabajamos con pasión</p>
           </div>
-        </div>
+          <div class="footer-box">
+            <h4>explorar</h4>
+            <a href="/">home</a>
+            <a href="#quienes-somos">quienes somos</a>
+            <a href="#portafolio">portafolio</a>
+            <a href="#experiencia">Experiencia</a>
+            <a href="#clientes">Clientes</a>
+            <a href="#contacto">contacto</a>
+          </div>
+          <div class="footer-box">
+            <h4>Ubicación</h4>
+            <div class="location">
+              <img class="icono" src="./images/iconos/icons8-marcador-64 (1).png" alt="icono-location">
+              <div>
+                <p>Cra 74a # 51a - s87</p>
+                <p>Bogotá</p>
+                <p>Colombia</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="rights">
+          <p>Copyright © 2024 | Extrem Marketing</p>
+        </section>
       </div>
     </div>
   </footer>
